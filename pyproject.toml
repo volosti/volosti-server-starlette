@@ -24,21 +24,22 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Typing :: Typed",
 ]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 aiosqlite = { version = ">=0.17.0", optional = true }
-asyncpg = { version = ">=0.26.0", optional = true }
-cryptography = { version = "^37.0.4", optional = true }
+asyncpg = { version = ">=0.27.0", optional = true }
+cryptography = { version = "^38.0.3", optional = true }
 gunicorn = { version = "^20.1.0", optional = true }
-hypercorn = { version = ">=0.13.2", optional = true }
+hypercorn = { version = ">=0.14.3", optional = true }
 jinja2 = { version = "^3.1.2", optional = true }
 pycryptodome = { version = "^3.15.0", optional = true }
-python-multipart = { version = "*", optional = true }
-starlette = ">=0.20.4"
-uvicorn = { version = ">=0.18.2", optional = true }
+python-multipart = { version = ">=0.0.5", optional = true }
+starlette = ">=0.21.0"
+uvicorn = { version = ">=0.19.0", optional = true }
 volosti-server-common = { version = "^0.1.dev1", allow-prereleases = true }
 
 [tool.poetry.extras]
@@ -65,10 +66,10 @@ all = [
 [tool.poetry.dev-dependencies]
 flake8 = "^5.0.3"
 isort = "^5.10.1"
-mypy = ">=0.971"
+mypy = ">=0.982"
 pytest = "^7.1.2"
-pytest-cov = "^3.0.0"
-trio = ">=0.21.0"
+pytest-cov = "^4.0.0"
+trio = ">=0.22.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
